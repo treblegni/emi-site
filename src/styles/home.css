@@ -1,0 +1,42 @@
+table, th, td {
+  border-radius: 20px;
+  border: 2px solid #699254;
+  border-collapse: collapse;
+}
+td {
+  width: 14.3%;
+}
+td, th {
+  height: 14.3%;
+}
+#page {
+  background-color: #93CAD0;
+  @apply flex h-screen w-screen;
+}
+#content {
+  background-color: #FFFEE4;
+  border: 3px #699254 solid;
+}
+.content {
+  padding: 0px 2px;
+  @apply flex flex-col gap-2 w-full overflow-y-auto;
+}
+.hero {
+  background-image: url("/img/rbweek-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  @apply w-full h-80 overflow-hidden;
+}
+
+.post {
+  border-radius: 8px;
+  height: auto;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+}
